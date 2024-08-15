@@ -5,6 +5,7 @@ const cors = require('cors');
 //Routes
 import alimentosroutes from "./routes/alimentos-routes"
 import gruposroutes from "./routes/grupos-routes"
+import intensidadroutes from "./routes/intensidad-routes"
 
 
 const app = express();
@@ -25,5 +26,5 @@ app.use(cors({
 //routes
 app.use("/api/alimentos", alimentosroutes);
 app.use("/api/grupos", gruposroutes);
-
+app.use("/api/intensidad", intensidadroutes);
 export default app;
